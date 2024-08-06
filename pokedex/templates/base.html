@@ -22,9 +22,15 @@
                       <li class="nav-item">
                         <a class="nav-link btn btn-success text-white"  href="{% url "pokedex:index" %}" style="margin-right: 15px">Home</a>
                       </li>
+                      <li class="nav-item">
+                        <a class="nav-link btn btn-success text-white"  href="{% url "pokedex:trainers" %}" style="margin-right: 15px">Entrenadores</a>
+                      </li>
                       {% if user.is_authenticated %}
                         <li class="nav-item">
                             <a class="nav-link btn btn-success text-white" href="{% url "pokedex:add_pokemon" %}" style="margin-right: 15px">Nuevo Pokemon</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-success text-white" href="{% url "pokedex:add_trainer" %}" style="margin-right: 15px">Nuevo Entrenador</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link btn btn-danger text-white" href="{% url "logout" %}">Logout</a>
